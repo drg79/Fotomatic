@@ -36,9 +36,8 @@ html {
 }
 
 .image-container img {
-  display: block;
-
-
+    max-width: 100%;
+  /* this rule above solved the images being "contained" issue*/
 }
 
 @media only screen and (max-width: 760px) {
@@ -233,20 +232,18 @@ header .mobile {
 #features-section img {
   width: 90%;
   height: 65%;
+  margin-bottom: 2.5rem;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem 2.5rem 12rem 2.5rem;
+  padding: 2rem 2rem 6rem 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-  height: 40rem;
-  margin: 2rem 2.5rem 12rem 2.5rem;
 }
 
 .feature .image-container {
-  width: 90%;
-  height: 65%;
+
   margin: 0 auto;
 }
 
@@ -294,7 +291,6 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
-      display: flex;
 }
 
 #filters-section .content {
@@ -318,10 +314,13 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
-
-
-
+  display: flex;
 }
+
+#filters-section .image-container {
+  width: 100%;
+}
+
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -403,7 +402,7 @@ footer {
 footer .content {
   color: white;
   display: flex;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 footer .copyright {
