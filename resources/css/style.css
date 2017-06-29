@@ -6,11 +6,19 @@ html {
 }
 
 .main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+#sign-up-section {
   background-image: url(../images/banner-landingpage.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+#sign-up-cta {
+  margin-left: 6.25rem;
+  margin-top: 10.63rem
 }
 
 .center {
@@ -29,6 +37,8 @@ html {
 
 .image-container img {
   display: block;
+  width: 90%;
+  height: 65%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -44,6 +54,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 20;
 }
 
 header .content {
@@ -217,6 +228,7 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+
 }
 
 .feature {
@@ -224,6 +236,8 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  height: 40rem;
+  margin-bottom: 12rem;
 }
 
 .feature .image-container {
